@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    
+    <!-- Parameter Fungsi-->
+    <h2>Belajar Fungsi JS</h2>
+    <p id="terserah"></p>
+    <p id="tes"></p>
+    <p id="orang"></p>
+
+    <!-- dia yang memanggil-->
+    <button onclick="fungsiKita">Klik dongs</button>
+
+    <script>
+
+        var apa = fungsiKita(10, 11)
+
+        //Blok kode
+        function fungsiKita(a, b){
+            return a * b;
+            //ini tugasnya
+            alert("udah di klik dong !");
+        }
+
+        var tes = fungsiKita(100, 3);
+
+        document.getElementById("tes").innerHTML = tes;
+        document.getElementById("terserah").innerHTML = apa;
+
+    </script>
+
+
+    <h2>Cek Username</h2>
+    <p id="tes"></p>
+    <p id="orang"></p>
+
+    <script>
+
+    var apa = fungsiKata("Hello", "Pingsoo");
+
+    function fungsiKita(a, b){
+            return a * b;
+    }
+
+    function fungsiKita(c, d){
+            return c + " " + d;
+    }
+
+    var tes = fungsiKita(100, 3);
+
+        document.getElementById("orang").innerHTML = apa;
+        document.getElementById("tes").innerHTML = orang;
+
+    </script>
+
+</body>
+</html>

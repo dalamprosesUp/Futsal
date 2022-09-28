@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variabel Lokal dan Publik</title>
+
+
+
+</head>
+<body>
+    
+
+    <h1>Belajar Variabel Lokal dan Publik</h1>
+
+    <h2>1. Variabel Lokal</h2>
+    <p id="lokal"></p>
+
+    <h2>2. Variabel Publik</h2>
+    <p id="publik"></p>
+
+    <script>
+
+        lokalVariabel();
+        publikVariabel();
+
+        var publik = "Publik";
+        
+        function lokalVariabel(){
+            var lokal;
+            lokal = "Teks ini tampil menggunakan variabel lokal dalam fungsi.";
+            document.getElementById("lokal").innerHTML = lokal;
+        }
+
+        console.log(lokal);
+
+        function publikVariabel(){
+            publik = "Teks ini tampil menggunakan variabel publik"
+            document.getElementById("publik").innerHTML = publik;
+        }
+        
+        console.log(publik);
+    </script>
+</body>
+</html>

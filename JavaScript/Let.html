@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic JavaScript</title>
+
+</head>
+<body>
+    <h2>Cek Username</h2>
+    <p id="terserah"></p>
+
+    <script>
+
+    var dataNumber; // 1. Pembutan variabel
+    dataNumber = 100 + 100 - 10; // 2. Pemberian nilai
+
+    var dataString;
+    dataString = "ini variabel string";
+
+    var dataBoolean;
+    dataBoolean = true;
+
+    var dataArray;
+    dataArray = ["Data 1", "Data 2", "Data 3"];
+    // array adalah type data yang menampung banyak data
+    //dataArray = [1, 2, 3];
+
+    console.log(dataArray); // 3. Peemanggilan data dari variabel (mengetahui data apa yan ditampung data apa)
+    document.getElementById("terserah").innerHTML = dataArray;
+
+    let a, b;
+    a = 10;
+    b = 11;
+
+    </script>
+
+    <script>
+
+        if (!(a > b)){
+            document.getElementById("terserah").innerHTML = "Benar";
+        }else{
+            document.getElementById("terserah").innerHTML = "Salah";
+        }
+    </script>
+</body>
+</html>

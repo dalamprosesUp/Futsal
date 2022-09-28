@@ -1,0 +1,25 @@
+<h2>Cek Username</h2>
+
+     <form>
+        <table width="225" cellpadding="4">
+            <tr>
+                <td>Username</td>
+                <td><input type="text" id="username"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="right"><input type="button" value="Cek" onClick="Login()"></td>
+            </tr>
+        </table>
+    </form>
+
+<script>
+    function Login(){ 
+            var user = document.getElementById("username").value;
+
+            if (user == "admin" || user == "user"){
+                alert("Data terdaftar !");
+            }else{
+                alert("Data tidak ditemukan !");
+            }
+        }
+</script>
